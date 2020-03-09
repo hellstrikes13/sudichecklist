@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>blah Server Provisioning Checklist</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/createchecklist.css" rel="stylesheet">
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a></li>
+            <li role="presentation"><a href="#">Reports</a></li>
+            <li role="presentation" class="active"><a href="#">Server Provisioning checklist</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">blah Server Provisioning </h3>
+      </div>
+
+      <div class="jumbotron">
+       <h2> Checklist for blah Server Provisioning</h2>
+       <form class="createchklst" action="{{url_for('insertdatasp')}}" method="post">
+
+        <label for="hostname" class="sr-only">HostName</label>
+        <input type="hostname" name="hostname" id="hostname" class="form-control" placeholder="HostName " required autofocus>
+
+	<label for="dcboxlink" class="sr-only">DCbox link</label>
+        <input type="dcboxlink" name="dcboxlink" id="dcboxlink" class="form-control" placeholder="DC box link" required autofocus>
+
+	<label for="per_nw_routes" class="sr-only">per_nw_routes</label>
+        <input type="per_nw_routes" name="per_nw_routes" id="per_nw_routes" class="form-control" placeholder="Permanent Network routes(yes/no)" required autofocus>
+	
+	<label for="omsa" class="sr-only">omsa</label>
+        <input type="omsa" name="omsa" id="omsa" class="form-control" placeholder="Dell OMSA installed(yes/NO)" required autofocus>
+         
+	<label for="puppet" class="sr-only">puppet</label>
+        <input type="puppet" name="puppet" id="puppet" class="form-control" placeholder="Puppet installed(yes/no)" required autofocus>
+         
+	<label for="timezone" class="sr-only">timezone</label>
+        <input type="timezone" name="timezone" id="timezone" class="form-control" placeholder="Timezone should be UTC only(yes/no)" required autofocus>
+         
+	<label for="pxe" class="sr-only">pxe</label>
+        <input type="pxe" name="pxe" id="pxe" class="form-control" placeholder="Disabled PXE BOOT(yes/no)" required autofocus>
+         
+	<label for="ipplan" class="sr-only">ipplan</label>
+        <input type="iplan" name="ipplan" id="ipplan" class="form-control" placeholder="IpPlan Update(yes/no)" required autofocus>
+	
+        <label for="slant" class="sr-only">slant</label>
+        <input type="slant" name="slant" id="slant" class="form-control" placeholder="Server added to SLANT(yes/no)" required autofocus>
+         
+	<label for="mgtip" class="sr-only">mgtip</label>
+        <input type="mgtip" name="mgtip" id="mgtip" class="form-control" placeholder="Management IP" required autofocus>
+         
+	<label for="prodip" class="sr-only">prodip</label>
+        <input type="prodip" name="prodip" id="prodip" class="form-control" placeholder="Production IP" required autofocus>
+	
+        <label for="raidconf" class="sr-only">raidconf</label>
+        <input type="raidconf" name="raidconf" id="raidconf" class="form-control" placeholder="Raid Config for OS / Data drive" required autofocus>
+         
+
+ 
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Finished</button>
+       </form>
+
+      </div>
+       
+ 
+      <footer class="footer">
+        <p>&copy; blah Inc 2016</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>

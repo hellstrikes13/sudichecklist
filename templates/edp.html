@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>blah Employee Discontinuation Process</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/createchecklist.css" rel="stylesheet">
+
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a></li>
+            <li role="presentation"><a href="#">Reports</a></li>
+            <li role="presentation" class="active"><a href="#">EDP checklist</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">blah EDP</h3>
+      </div>
+
+      <div class="jumbotron">
+       <h2> Checklist for Employee Discontinuation Process</h2>
+
+       <form class="createchklst" action="{{url_for('insertdataedp')}}" method="post">
+
+        <label for="nam" class="sr-only">nam</label>
+        <input type="nam" name="nam" id="nam" class="form-control" placeholder="user AD" required autofocus>
+
+        <label for="rtid" class="sr-only">rtid</label>
+        <input type="rtid" name="rtid" id="rtid" class="form-control" placeholder="RT id" required autofocus>
+
+        <label for="gits" class="sr-only">gits</label>
+        <input type="gits" name="gits" id="gits" class="form-control" placeholder="Revoke access from Git repos(yes/no/NA)" required autofocus>
+
+        <label for="aka" class="sr-only">aka</label>
+        <input type="aka" name="aka" id="aka" class="form-control" placeholder="Revoke access from Akamai(yes/no/NA)" required autofocus>
+
+        <label for="sysrt" class="sr-only">sysrt</label>
+        <input type="sysrt" name="sysrt" id="sysrt" class="form-control" placeholder="Revoke access from SysRT(yes/no/NA)" required autofocus>
+
+        <label for="mnetad" class="sr-only">mnetad</label>
+        <input type="mnetad" name="mnetad" id="mnetad" class="form-control" placeholder="Revoke acess from blah AD(yes/no/NA)" required autofocus>
+
+        <label for="dnsmadeeasy" class="sr-only">dnsmadeeasy</label>
+        <input type="dnsmadeesy" name="dnsmadeeasy" id="dnsmadeeasy" class="form-control" placeholder="Revoke access from DNSMadeEasy(yes/no/NA)" required autofocus>
+
+         <label for="dnsmadeeasy" class="sr-only">AWS IAM</label>
+        <input type="awsiam" name="awsiam" id="awsiam" class="form-control" placeholder="Revoke access from AWS IAM (yes/no/NA)" required autofocus>
+
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Finished</button>
+       </form>
+
+      </div>
+       
+ 
+      <footer class="footer">
+        <p>&copy; blah 2016</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>

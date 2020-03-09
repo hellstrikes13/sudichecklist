@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blah Employee Discontinuation Process</title>
+<style type="text/css">
+.edp{
+    /*max-width: 500px;*/
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+    text-align: center
+}
+.edp-heading{
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-bottom: 3px;
+
+}
+.edp label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.edp label > span{
+   /* width: 100px;*/
+    font-weight: bold;
+    padding-top: 8px;
+    padding-right: 5px;
+    text-align : left
+}
+.edp input.input-field{
+    width: 15%;
+    float: center;
+ }
+.edp input.input-field, 
+.edp .input-field:focus, 
+.edp .select-field:focus{
+    border: 1px solid #0C0;
+}
+.edp input[type=submit],
+.edp input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.edp input[type=submit]:hover,
+.edp input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
+}
+</style>
+</head>
+
+<body>
+<div class="edp">
+<div class="edp-heading">blah Employee Discontinuation Process</div>
+<form action="" method="post">
+<label for="field1"><span>RT</span><input type="text" class="input-field" name="field1" value="" /></label>
+<label for="field2"><span>user AD</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+
+<h4>Revoke access from following:</h4>
+
+<label for="field3"><span>GIT repos</span>
+ <span>YES<input type="radio" class="input-field" name="field3" value="YES" /></span>
+ <span>NO<input type="radio" class="input-field" name="field3" value="NO" /></span>
+ <span>NA<input type="radio" class="input-field" name="field3" value="NA" /></span>
+</label>
+
+<label for="field4"><span>AWS IAM</span> 
+ <span>YES<input type="radio" class="input-field" name="field4" value="YES" /></span>
+ <span>NO<input type="radio" class="input-field" name="field4" value="NO" /></span>
+ <span>NA<input type="radio" class="input-field" name="field4" value="NA" /></span>
+</label>
+<label for="field5"><span>AKAMAI</span> 
+ <span>YES<input type="radio" class="input-field" name="field5" value="YES" /></span>
+ <span>NO<input type="radio" class="input-field" name="field5" value="NO" /></span>
+ <span>NA<input type="radio" class="input-field" name="field5" value="NA" /></span>
+</label>
+<label for="field6"><span>DNS Made Easy</span> 
+ <span>YES<input type="radio" class="input-field" name="field6" value="YES" /> </span>
+ <span>NO<input type="radio" class="input-field" name="field6" value="NO" /></span>
+ <span>NA<input type="radio" class="input-field" name="field6" value="NA" />  </span>
+</label>
+<label for="field7"><span>SysRT</span> 
+ <span>YES<input type="radio" class="input-field" name="field7" value="YES" /></span> 
+ <span>NO<input type="radio" class="input-field" name="field7" value="NO" /></span>
+ <span>NA<input type="radio" class="input-field" name="field7" value="NA" /></span>  
+</label>
+<label for="field8"><span>blah AD</span> 
+ <span>YES<input type="radio" class="input-field" name="field8" value="YES" /></span> 
+ <span>NO<input type="radio" class="input-field" name="field8" value="NO" /></span>
+ <span>NA<input type="radio" class="input-field" name="field8" value="NA" /></span>  
+</label>
+
+<label for="field9"><span>&nbsp;</span>
+<span><input type="submit" value="Submit" name="field9" /></span>
+</label>
+
+</form>
+</div>
+</body>
+</html>
